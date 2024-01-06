@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Pixel";
+  src: url("./assets/Pixel-LCD-7.woff") format('woff');
+}
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background: url("/src/assets/bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  font-family: Pixel, sans-serif;
+}
