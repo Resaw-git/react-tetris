@@ -1,9 +1,10 @@
 import { Cell } from "../cell/cell";
 import { FC } from "react";
 import styles from "./stage.module.css"
+import { StageArrType } from "../../game-helpers";
 
 type StageProps = {
-  stage: any[][];
+  stage: StageArrType;
 };
 
 export const Stage: FC<StageProps> = ({ stage }) => {

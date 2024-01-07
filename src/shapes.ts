@@ -49,9 +49,9 @@ export const SHAPES: ShapesType = {
   },
   T: {
     shape: [
-      [0, 0, 0],
-      ["T", "T", "T"],
       [0, "T", 0],
+      ["T", "T", "T"],
+      [0, 0, 0],
     ],
     color: "132, 61, 198",
   },
@@ -66,6 +66,7 @@ export const SHAPES: ShapesType = {
 };
 
 export const randomShape = () => {
+  console.log(1)
   const shapeVars = "IJLOSTZ";
   const randShape = shapeVars[Math.floor(Math.random() * shapeVars.length )];
   return SHAPES[randShape]

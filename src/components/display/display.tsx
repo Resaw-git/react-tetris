@@ -2,11 +2,11 @@ import { FC } from "react";
 import styles from "./display.module.css";
 
 type DisplayProps = {
-  gameOver: boolean;
+  gameOver?: boolean;
   text: string;
 };
 
-export const Display: FC<DisplayProps> = ({ gameOver, text }) => {
+export const Display: FC<DisplayProps> = ({ gameOver = false, text }) => {
   return (
     <div
       className={styles.display}

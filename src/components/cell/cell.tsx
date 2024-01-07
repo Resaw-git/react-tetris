@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import styles from "./cell.module.css";
 import { SHAPES } from "../../shapes";
 
@@ -6,7 +6,7 @@ type CellProps = {
   type: string | number;
 };
 
-export const Cell: FC<CellProps> = ({ type }) => {
+const Cell: FC<CellProps> = ({ type }) => {
   return (
     <div
       className={styles.cell}
@@ -21,3 +21,8 @@ export const Cell: FC<CellProps> = ({ type }) => {
     />
   );
 };
+
+const MemoizedCell = memo(Cell);
+
+export { MemoizedCell as Cell };
+
